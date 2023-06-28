@@ -1,6 +1,8 @@
 # FMP
 This is a Common Lisp interface to the API endpoints provided by Financial Model Prep (FMP)
 
+**This is work in progress **
+
 
 ## Pre-requisites
 - API key from FMP. Get yours at [fmpcloud.io](https://fmpcloud.io/)
