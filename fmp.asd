@@ -10,4 +10,5 @@
   :components ((:file "package")
 	       (:file "settings")
 	       (:file "url-methods")
+               (:file "general")
                (:file "fmp")))
