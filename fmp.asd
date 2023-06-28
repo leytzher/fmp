@@ -2,7 +2,7 @@
 
 (asdf:defsystem #:fmp
   :description "FMP + Common Lisp"
-  :author "AlgoTraders"
+  :author "leytzher"
   :license  "MIT"
   :version "0.0.1"
   :serial t
