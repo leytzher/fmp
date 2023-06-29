@@ -9,6 +9,7 @@
   :depends-on (:dexador :cl-json :alexandria :serapeum :cl-dotenv)
   :components ((:file "package")
 	       (:file "settings")
+	       (:file "utils")
 	       (:file "url-methods")
                (:file "general")
                (:file "fmp")))

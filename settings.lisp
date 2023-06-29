@@ -331,3 +331,5 @@
 		 (NASDAQ_CONSTITUENTS_FILENAME .  "nasdaq_constituents.csv")
 		 (DOWJONES_CONSTITUENTS_FILENAME .  "dowjones_constituents.csv")
 		 ))
+
+(defparameter *exchange-list*  '("etf" "commodity" "euronext" "nyse" "amex" "tsx" "index" "mutual_fund" "nasdaq" "forex" "crypto" "lse" "xetra" "nse"))
