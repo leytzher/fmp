@@ -45,7 +45,16 @@
 	   (return-json-v3 "search-name" :query-vals params)))
 	(t (format t "Invalid Exchange. Values must be one of: ~a" *exchange-list*))))
 
+(defun sp500-companies ()
+  "All S&P 500 constituents"
+  (return-json-v3 "sp500_constituent")))
 
+(defun nq100-companies ()
+"All Nasdaq 100 companies"
+    (return-json-v3 "nasdaq_constituent"))
 
+(defun dow-companies ()
+    "All Dow Jones companies"
+    (return-json-v3 "dowjones_constituent"))
 
 
