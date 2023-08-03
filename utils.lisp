@@ -41,3 +41,10 @@
   (cond ((member value *technical-indicators-time-delta-values* :test #'string=)
 	value)
 	(t (format t "Invalid technical indicators time delta. It must be one of ~a:" *technical-indicators-time-delta-values*))))
+
+(defun get-values (key list-of-alists)
+  (mapcar #'(lambda (x) (cdr (assoc key x)))
+	  list-of-alists))
+
+;w
+ 
