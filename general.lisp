@@ -47,7 +47,7 @@
 
 (defun sp500-companies ()
   "All S&P 500 constituents"
-  (return-json-v3 "sp500_constituent")))
+  (return-json-v3 "sp500_constituent"))
 
 (defun nq100-companies ()
 "All Nasdaq 100 companies"

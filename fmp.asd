@@ -12,5 +12,4 @@
 	       (:file "utils")
 	       (:file "url-methods")
                (:file "general")
-	       ;;(:file "websockets")
                (:file "fmp")))
