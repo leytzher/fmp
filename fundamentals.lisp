@@ -17,7 +17,34 @@
   (return-json-v3 (concatenate 'string "income-statement/" ticker)
 		  (pairlis '("period" "limit") `("quarter" ,limit))))
 
-(defun income-statement-by-cik (&key ticker (limit 400) (period "quarter"))
+(defun income-statement-by-cik (&key cik (limit 400) (period "quarter"))
   "Get income statement by CIK"
-  (return-json-v3 (concatenate 'string "income-statement/" ticker)
+  (return-json-v3 (concatenate 'string "income-statement/" cik)
 		  (pairlis '("period" "limit") `(,period ,limit))))
+
+(defun annual-balance-sheet (&key ticker (limit 120))
+  "Annual Balance sheet statements"
+  (return-json-v3 (concatenate 'string "balance-sheet-statement/" ticker)
+		  (pairlis '("limit") `(,limit))))
+
+(defun quarterly-balance-sheet (&key ticker (limit 400))
+  "Quarterly Balance Sheet statements"
+  (return-json-v3 (concatenate 'string "balance-sheet-statement/" ticker)
+		  (pairlis '("limit" "period") `(,limit "quarter"))))
+
+
+(defun balance-sheet-by-cik (&key cik (limit 400) (period "quarter"))
+  "Get balance sheet statement by CIK"
+  (return-json-v3 (concatenate 'string "balance-sheet-statement/" cik)
+		  (pairlis '("period" "limit") `(,period ,limit))))
+
+
+(defun annual-cash-flow (&key ticker (limit 120))
+  "Annual cashflow statements"
+  (return-json-v3 (concatenate 'string "cash-flow-statement/" ticker)
+		  (pairlis '("limit") `(,limit))))
+
+(defun quarterly-cash-flow (&key ticker (limit 120))
+  "quarterly cashflow statements"
+  (return-json-v3 (concatenate 'string "cash-flow-statement/" ticker)
+		  (pairlis '("limit" "period") `(,limit "quarter"))))
