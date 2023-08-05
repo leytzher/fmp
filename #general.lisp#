@@ -57,3 +57,8 @@
     "All Dow Jones companies"
     (return-json-v3 "dowjones_constituent"))
 
+(defun annual-income-statement (&key name (limit 120))
+  "Get annual income statement for ticker"
+  )
+
+
