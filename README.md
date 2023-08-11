@@ -1,4 +1,4 @@
-# FMP
+# FMP 💰
 This is a Common Lisp interface to the API endpoints provided by Financial Model Prep (FMP)
 
 **This is work in progress **
