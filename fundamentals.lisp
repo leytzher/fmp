@@ -139,4 +139,43 @@
   (return-json-v3 (concatenate 'string "cash-flow-statement-as-reported/" ticker)
 		  (pairlis '("limit" "period") `(,limit "quarter"))))
 
+;; Full Financial Statements as reported
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun annual-full-financial-statement (&key ticker)
+  "Annual Full Financial Statement"
+  (return-json-v3 (concatenate 'string
+			       "financial-statement-full-as-reported/" ticker)))
+
+(defun quarterly-full-financial-statement (&key ticker)
+  "Annual Full Financial Statement"
+  (return-json-v3 (concatenate 'string
+			       "financial-statement-full-as-reported/" ticker)
+		  (pairlis '("period") '("quarter"))))
+
+
+;;; Dates and links to financial data
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun financial-reports-dates (&key ticker)
+  "Return dates and links to data"
+  (return-json-v4 "financial-reports-dates"
+		  (pairlis '("symbol") `(,ticker))))
+
+;; Annual Reports on Form 10-K
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun annual-financial-reports (&key ticker year)
+  "Annual reports on form 10-K"
+  (return-json-v4 "financial-reports-json"
+		  (pairlis '("symbol" "year" "period") `(,ticker ,year "FY"))))
+
+;; Quarterly Earning Reports
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun quarterly-financial-reports (&key ticker year period)
+  "Quarterly Earning Reports"
+  (return-json-v4 "financial-reports-json"
+		  (pairlis '("symbol" "year" "period")
+			   `(,ticker ,year ,period))))
 
