@@ -193,3 +193,15 @@
 			       "batch_earning_call_transcript/"
 			       ticker)
 		  (pairlis '("year") `(,year))))
+
+
+;; Company Notes due
+;;;;;;;;;;;;;;;;;;;;
+;;; these are promissory notes, it is a financial instrument that is a writen promise from the issuer to pay another party (the holder) a certain amount of
+;;; money, either on demand or at a specific future date.
+;;; Example: 1.625% Notes due 2029 means that the note has a coupon of 1.625% that the issuer has promised to pay the holders. Due 2029 means taht by 2029 the principal
+;; should be paid back
+
+(defun company-notes (&key ticker)
+  (return-json-v4 "company-notes" (pairlis '("symbol") `(,ticker))))
+
