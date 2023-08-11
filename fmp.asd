@@ -13,4 +13,5 @@
 	       (:file "url-methods")
                (:file "general")
 	       (:file "fundamentals")
+	       (:file "insider-trading")
                (:file "fmp")))

@@ -179,3 +179,17 @@
 		  (pairlis '("symbol" "year" "period")
 			   `(,ticker ,year ,period))))
 
+;; Earning call transcript
+;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defun earning-call-transcript (&key ticker quarter year)
+  (return-json-v3 (concatenate 'string
+			       "earning_call_transcript/" ticker)
+		  (pairlis '("quarter" "year") `(,quarter ,year))))
+
+(defun batch-earning-call-transcript (&key ticker year)
+  "Transcripts for symbol for a specific year"
+  (return-json-v4 (concatenate 'string
+			       "batch_earning_call_transcript/"
+			       ticker)
+		  (pairlis '("year") `(,year))))
