@@ -19,4 +19,6 @@
 	       (:file "earnings-calendar")
 	       (:file "important-events")
 	       (:file "cik")
+	       (:file "price-target")
+	       (:file "symbol-list")
                (:file "fmp")))

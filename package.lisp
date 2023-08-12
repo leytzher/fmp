@@ -60,4 +60,7 @@
 	   price-target-by-analyst-company
 	   price-target-consensus
 	   price-target-rss-feed
+	   tradable-symbols
+	   stock-list
+	   etf-list
 	   ))
