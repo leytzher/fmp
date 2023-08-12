@@ -18,4 +18,5 @@
 	       (:file "sec-filings")
 	       (:file "earnings-calendar")
 	       (:file "important-events")
+	       (:file "cik")
                (:file "fmp")))

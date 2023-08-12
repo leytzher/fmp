@@ -46,5 +46,8 @@
   (mapcar #'(lambda (x) (cdr (assoc key x)))
 	  list-of-alists))
 
-;w
+(defun format-query-string (str)
+  "Format query string to be used as query parameters by adding %20 instead of spaces"
+  (cl-ppcre:regex-replace-all " " str "%20" ))
+
  
