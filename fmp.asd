@@ -21,4 +21,7 @@
 	       (:file "cik")
 	       (:file "price-target")
 	       (:file "symbol-list")
+               (:file "prices")
+	       (:file "returns")
+	       (:file "company")
                (:file "fmp")))

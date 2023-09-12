@@ -62,5 +62,8 @@
 	   price-target-rss-feed
 	   tradable-symbols
 	   stock-list
-	   etf-list
+	   company-information
+	   security-info
+	   make-security-list
+	   filter-security-by
 	   ))
