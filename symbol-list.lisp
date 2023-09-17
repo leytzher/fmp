@@ -8,7 +8,6 @@
 
 
 (defclass security-info ()
-  "Holds basic security information"
   ((ticker :accessor ticker :initarg :ticker)
    (name :accessor name :initarg :name)
    (exchange :accessor exchange :initarg :exchange)
