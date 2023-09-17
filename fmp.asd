@@ -6,7 +6,7 @@
   :license  "MIT"
   :version "0.0.1"
   :serial t
-  :depends-on (:dexador :cl-json :alexandria :serapeum :cl-dotenv :websocket-driver-client)
+  :depends-on (:dexador :cl-json :alexandria :serapeum :cl-dotenv :websocket-driver-client :wilbur)
   :components ((:file "package")
 	       (:file "settings")
 	       (:file "utils")
